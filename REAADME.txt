@@ -1,0 +1,78 @@
+blog tema : Kota Atlantis yang Hilang: 
+
+3 access modifier (admin author pembaca)
+
+analisa alur kerja web 
+https://chatgpt.com/c/836a613b-7204-463d-9e4a-7d885677a84c
+
+login $ register page 
+coba satuin halaman author dan pembaca tadi ada hak akses nya 
+
+tampilan admin CRUD dan akses ke semua halaman dan halaman admin 
+
+tampilan author dan user tampilan web blog seperti umum nya 
+
+referensi https://chatgpt.com/c/1496ed52-5f2f-433d-9956-8473be3f15f7
+
+yg harus ada di web blog bagian admin
+https://chatgpt.com/c/7d52220b-d242-4d24-af82-9e854922ea2a
+
+maskot 
+https://chatgpt.com/c/623f9719-9b9b-41ce-b3cf-b8c0f746c9f3
+
+php alur webblog
+https://chatgpt.com/c/a373632f-775b-4791-838b-a382114315b5
+
+database struktur
+https://chatgpt.com/c/7d52220b-d242-4d24-af82-9e854922ea2a
+
+flow web blog https://chatgpt.com/c/6f9be6b2-bee6-4b27-a6a2-b7c41ef52d63
+
+referensi alur kkerja 
+https://chatgpt.com/c/74dd1bd6-4211-4bef-9561-117c2a2f5090
+
+https://chatgpt.com/c/2604a828-b6d4-43cc-9fa7-d66edd1ea5f1
+
+https://chatgpt.com/c/65a8ee88-7588-47d4-a585-24b7686764bc
+
+https://chatgpt.com/c/e64ad347-6386-4e02-9253-41270a88cff2
+
+https://chatgpt.com/c/1f718435-e5b3-4c4a-aa07-8d48f63e91cd
+
+https://chatgpt.com/c/7298c783-dab2-4460-a71b-eb438fadcfde
+
+css bg aman 
+https://chatgpt.com/c/29822566-02bd-4588-b18f-71cf0ab328db
+
+rss
+https://chatgpt.com/c/0ca444d8-6482-4b9f-b2cc-98b2447c1a43
+
+materi tentang PDO dan sekitarnya 
+
+https://chatgpt.com/c/97e48349-9e04-4614-bb02-2aab90adcf43
+
+Cara Membuat Animasi Mouse Scroll Dengan CSS
+
+animasi otomatis 
+aos gsap
+info API 
+
+https://chatgpt.com/c/94c5c0bc-44ba-4395-958a-07aa4362d11d
+
+ide buat web API
+Aplikasi Pencarian Restoran
+
+buat belajar 
+
+https://chatgpt.com/c/1418ea58-2b5c-4ef8-9e80-5a915e1d2993
+
+yg harus di pelajari js
+
+https://chatgpt.com/c/ef4d166b-e9c3-4342-83d7-d11358588dbc
+
+yg harus di pelajari php
+
+https://chatgpt.com/c/eb891b96-8e78-45f8-9e37-347cfe370bbd
+
+overflow hiden text-overflow elipsisCSS
+elipsis

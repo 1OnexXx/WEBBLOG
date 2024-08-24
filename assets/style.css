@@ -1,0 +1,682 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #050e0f;
+}
+
+.container {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.bg-opacity {
+    width: 100%;
+    height: 50vh;
+    background-color: rgba(0, 0, 0, 0.4); /* Menggunakan rgba untuk opacity */
+    border-radius: 15px;
+}
+
+.bg-slider {
+    background-image: url('../storage/black-dragon-8808269.png');
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh elemen */
+    background-repeat: no-repeat; /* Mencegah gambar mengulang */
+    background-position: center;
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1; /* Menempatkan gambar di belakang elemen lain */
+    filter: blur(5px); /* Menentukan seberapa blur gambarnya */
+}
+
+.judul-content {
+    display: block;
+    width: 65%;
+    font-size: 25px;
+    margin: 10px 0;
+}
+
+.category ul li {
+    list-style: none;
+    display: inline;
+    margin-right: 15px;
+}
+
+.category ul li button {
+    background-color: rgba(51, 51, 51, 0.5); /* Transparan */
+    color: azure;
+    padding: 10px;
+    height: 36px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+}
+
+.penjelasan {
+    width: 750px; /* Tentukan lebar elemen */
+    display: -webkit-box; /* Flexbox untuk mendukung line-clamp */
+    -webkit-box-orient: vertical; /* Orientasi vertikal */
+    -webkit-line-clamp: 2; /* Batasi jumlah baris yang ditampilkan */
+    overflow: hidden; /* Sembunyikan teks yang melampaui batas elemen */
+    text-overflow: ellipsis; /* Tambahkan elipsis ("...") di akhir teks yang terpotong */
+    line-height: 1.2em; /* Tinggi baris */
+    max-height: 3.6em; /* Batasi tinggi untuk dua baris */
+}
+
+.reading-a a {
+    text-decoration: none;
+    color: azure;
+    font-size: 15px;
+    
+}
+
+.reading-a {
+    margin-top: 20px;
+    border: 1px solid azure; /* Anda bisa menggunakan 'azure' atau 'rgb(240, 255, 255)' */
+    width: 10%;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reading-a:hover {
+    background-color: rgba(240, 255, 255, 0.3); /* Menggunakan rgba untuk nilai transparansi */
+}
+.banner-slider {
+    color: azure;
+    margin-left: 100px;
+    margin-top: 50px;
+}
+
+.banner-content {
+    background-image: url('../storage/black-dragon-8808269.png');
+    background-size: cover; /* Mengatur gambar agar menutupi seluruh elemen */
+    background-repeat: no-repeat; /* Mencegah gambar mengulang */
+    background-position: center;
+    width: 90%;
+    height: 50vh;
+    border-radius: 20px;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mouse {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 80px;
+}
+
+.icon-scroll {
+    width: 20px;
+    height: 40px;
+    border-radius: 20px;
+    border: 1px solid azure;
+    position: relative; /* Agar pseudo-elemen dapat diposisikan relatif terhadap icon-scroll */
+}
+
+.icon-scroll::before {
+    content: "";
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    top: 5px; /* Posisi vertikal dari elemen elipsis */
+    left: 50%;
+    transform: translateX(-50%);
+    background: azure;
+    border-radius: 50%;
+    opacity: 1;
+    animation: mouse 2s infinite;
+}
+
+@keyframes mouse {
+    from {
+        opacity: 1;
+        top: 5px; /* Mulai dari posisi awal */
+    }
+    to {
+        opacity: 0;
+        top: 30px; /* Akhir posisi animasi */
+    }
+}
+
+.header-content{
+    background-color: rgba(255, 78, 29, 0.486);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    align-content: center;
+    width: 80%;
+    height: 200px;
+    margin: 170px 0 0 120px;
+    color: azure;
+    display: flex;
+    margin-bottom: 50px;
+    position: relative;
+
+}
+.kiri-header-content{
+    width: 50%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.kanan-header-content{
+    display: block;
+    width: 60%;
+    position: relative;
+    top: 35%;
+}
+.text-header-content{
+    width: 650px;
+    display: -webkit-box; /* Flexbox untuk mendukung line-clamp */
+    -webkit-box-orient: vertical; /* Orientasi vertikal */
+    -webkit-line-clamp: 2; /* Batasi jumlah baris yang ditampilkan */
+    overflow: hidden; /* Sembunyikan teks yang melampaui batas elemen */
+    text-overflow: ellipsis; /* Tambahkan elipsis ("...") di akhir teks yang terpotong */
+    line-height: 1.2em; /* Tinggi baris */
+    max-height: 3.6em; /* Batasi tinggi untuk dua baris */
+    margin-bottom: 20px;
+}
+.kanan-header-content a{
+    text-decoration: none;
+    color: azure;
+    display: flex;
+
+}
+/* CSS untuk .btn-about */
+.btn-about {
+    display: inline-block; /* Agar tombol tidak memenuhi lebar kontainer */
+    margin: 10px; /* Jarak sekitar tombol, sesuaikan sesuai kebutuhan */
+}
+
+.btn-about a {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: azure;
+    font-size: 16px; /* Ukuran font */
+    display: inline-flex; /* Memungkinkan flexbox pada tombol */
+    align-items: center; /* Menyelaraskan teks dan ikon secara vertikal */
+
+}
+
+
+.btn-about span {
+    margin-left: 5px; /* Jarak antara teks dan ikon panah */
+    font-weight: bold; /* Membuat ikon panah lebih menonjol */
+    transition: transform 0.3s; /* Efek transisi untuk gerakan panah */
+}
+
+.btn-about a:hover span {
+    transform: translateX(10px); /* Menggerakkan ikon panah 10px ke kanan saat hover */
+}
+
+.main-top-content{
+    width: 80%;
+    height: 230vh;
+    display: flex;
+    margin-top: 110px;
+    margin-left: 120px;
+}
+.main-kiri-content h1{
+    font-weight: 250;
+    margin-bottom: 30px;
+}
+.main-kiri-content{
+    width: 70%;
+    height: 215vh;
+    color: azure;
+}
+
+.main-kanan-content{
+    color: azure;
+    width: 30%;
+    height: 100vh;
+}
+
+.card-img-kiri {
+    position: relative;
+    margin-top: 20px;
+    width: 320px;
+    height: 320px;
+    overflow: hidden; /* Untuk menyembunyikan bagian gambar yang keluar dari batas elemen */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid  rgba(255, 78, 29);
+    
+}
+
+.card-img-kiri .img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover; /* Mengisi elemen dengan cara yang tidak merusak rasio aspek */
+    display: block;
+}
+
+.card-img-kiri span,
+.card-img-kiri button {
+    position: absolute; /* Mengatur posisi elemen-elemen ini relatif terhadap kontainer */
+    color: white; /* Warna teks */
+    background-color: rgba(0, 0, 0, 0.5); /* Warna latar belakang semi-transparan untuk visibilitas */
+    padding: 5px; /* Jarak di sekitar teks */
+    border-radius: 5px; /* Membuat sudut elemen lebih halus */
+}
+
+.card-img-kiri .kiri {
+    margin-top: 12px;
+    top: 5px;
+    left: 5px; /* Pojok kiri atas */
+    width: 100px;
+    height: 40px;
+    margin-left: 12px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.card-img-kiri .kanan {
+    top: 118px;
+    right: 5px; /* Pojok kanan atas */
+    width: 100px;
+    height: 40px;
+    margin-left: 15px;
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+
+}
+.card-img-kiri button {
+    bottom: 20px;
+    right: 25px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    width: 60px;
+    height: 30px;
+    border-radius: 50px;
+    border: 1px solid  rgba(255, 78, 29, 0.486);
+    background-color: rgba(255, 78, 29, 0.2);
+    font-weight: 600;
+
+}
+
+.populer-blog h1{
+    font-weight: 400;
+}
+
+.card-kiri {
+    display: flex;
+    overflow: hidden;
+}
+
+.main-card-kiri{
+    display: flex;
+    margin-bottom: 20px;
+}
+.main-card-kiri a {
+    color: azure;
+    text-decoration: none;
+}
+.main-card-kanan{
+    width: 50%;
+    display: block;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+.isi-atas{
+    margin-bottom: 10px;
+}
+.judul-card{
+    margin-bottom: 15px;
+}
+.judul-card h3{
+    font-size: 30px;
+}
+.category-card{
+    margin-bottom: 20px;
+    width: 30%;
+    height: 30px;
+    padding-top: 7px;
+    text-align: center;
+    border-radius: 5px;
+    font-size: 12px;
+    border: 1px solid  rgba(255, 78, 29, 0.486);
+    background-color: rgba(255, 78, 29, 0.2);
+
+}
+
+.caption{
+    margin-bottom: 30px;
+    width: 350px;
+    display: -webkit-box; /* Flexbox untuk mendukung line-clamp */
+    -webkit-box-orient: vertical; /* Orientasi vertikal */
+    -webkit-line-clamp: 4; /* Batasi jumlah baris yang ditampilkan */
+    overflow: hidden; /* Sembunyikan teks yang melampaui batas elemen */
+    text-overflow: ellipsis; /* Tambahkan elipsis ("...") di akhir teks yang terpotong */
+
+}
+
+.btn-read a {
+    text-decoration: none; /* Menghilangkan garis bawah dari tautan */
+    color: azure;
+    font-size: 16px; /* Ukuran font */
+    display: inline-flex; /* Memungkinkan flexbox pada tombol */
+    align-items: center; /* Menyelaraskan teks dan ikon secara vertikal */
+}
+
+.btn-read span {
+    margin-left: 5px; /* Jarak antara teks dan ikon panah */
+    font-weight: bold; /* Membuat ikon panah lebih menonjol */
+    transition: transform 0.3s; /* Efek transisi untuk gerakan panah */
+}
+
+.btn-read a:hover span {
+    transform: translateX(10px); /* Menggerakkan ikon panah 10px ke kanan saat hover */
+}
+.hr-bungkus{
+    display: flex;
+    justify-content: center;
+}   
+.hr {
+    width: 80%;
+    height: 0;
+    border-top: 4px dotted azure;
+    opacity: 0.5;
+    margin: 20px 0;
+}
+
+.main-kartu-kanan{
+    margin-top: 40px;
+    display: flex;
+}
+
+.card-img-kanan img{
+    object-fit: cover; /* Mengisi elemen dengan cara yang tidak merusak rasio aspek */
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+ul li {
+    text-decoration: none;
+    list-style: none;
+}
+.card-small-top{
+    color: rgba(255, 78, 29, 0.8);
+
+}
+.card-small-text{
+    margin-left: 10px;
+    display: block;
+    width: 80%;
+}
+.card-small-buttom a{
+    color: azure;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.social-media  {
+    padding-top: 100px;
+}
+.social-media a{
+    color: azure;
+    text-decoration: none;
+}
+.social-media h3{
+    padding-bottom: 15px;
+    font-size: 25px;
+    font-weight: 400;
+}
+.social-media ul li{
+    display: flex;
+    margin: 50px 0 50px 0;
+    border: 1px solid  rgba(255, 78, 29, 0.486);
+    background-color: rgba(255, 78, 29, 0.2);
+    height: 80px;
+    align-items: center;
+    border-radius: 5px;
+
+}
+.text-social-media{
+    margin-right: 120px;
+    margin-left: 20px;
+    font-weight: 600;
+    
+}
+.a-social-media{
+    background-color: rgba(255, 78, 29, 0.3);
+    padding: 10px;
+    border-radius: 5px;
+}
+.text-social-media span{
+    margin-right: 10px;
+}
+.social-media ul li i {
+    font-size: 30px;
+    margin-left: 30px;
+}
+.text-social-media-1{
+    margin-right: 95px;
+    margin-left: 20px;
+}
+.text-social-media-1 span{
+    margin-right: 10px;
+}
+.keuntungan-pengguna{
+    width: 80%;
+    height: 40vh;
+    display: flex;
+    margin-left:10% ;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    color: azure;
+
+}
+
+.keuntungan-1{
+    display: block;
+    width: 80%;
+    margin: 10px;
+
+}
+.keuntungan-2{
+    display: block;
+    width: 80%;
+    margin: 10px;
+
+}
+.keuntungan-3{
+    display: block;
+    width: 80%;
+    margin: 10px;
+
+}
+.keuntungan-mid{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    
+}
+.join-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.join-img {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bg-join img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.main-content-join {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: azure;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.main-content-join h3 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.subscribe-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #ff7f50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.subscribe-button:hover {
+    background-color: #ff6347;
+}
+
+.container-main-category{
+    display: flex;
+    justify-content: center; /* Memposisikan konten secara horizontal di tengah */
+    height: 100vh;           /* Menyediakan tinggi penuh viewport */
+}
+
+.main-category-content{
+    width: 80%;
+    left: 50%;
+}
+.atas-article-see{
+    display: flex;
+    color: azure;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    margin-top: 80px;
+
+}
+.atas-article-see a{
+    color: azure;
+    text-decoration: none;
+    align-items: end;
+}
+.article-box-img img{
+    width: 25%;
+    height: 35vh;
+    object-fit: cover;
+}   
+
+.article-row{
+
+    width: 100%;
+    display: flex;
+
+}
+
+/* Container for the article box */
+.article-box {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    margin-right: 30px;
+}
+
+/* Container for the image */
+.article-box-img img{
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    
+    
+}
+.article-box-content{
+    position: absolute;
+    width: 23%;
+    height: 30vh;
+    margin-top: 230px;
+    margin-left: 12px;
+    color: azure;
+
+}
+.detail-top{
+    color: azure;
+    margin-bottom: 10px;
+}
+
+.article-tags ul li {
+    display: inline;
+    padding: 8px;
+}
+
+.article-tags ul li a{
+
+    text-decoration: none;
+    border: 1px solid  rgba(255, 78, 29, 0.486);
+    background-color: rgba(255, 78, 29, 0.2);
+    color: rgb(255, 103, 61);
+    padding: 10px;
+    font-size: 13px;
+    border-radius: 10px;
+
+}
+.article-tags{
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+.backend-link{
+    border: 1px solid  rgba(255, 78, 29, 0.486);
+    background-color: rgba(255, 78, 29, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+.backend-link a{
+    text-decoration: none;
+    color: azure;
+    font-size: 13px;
+
+
+}

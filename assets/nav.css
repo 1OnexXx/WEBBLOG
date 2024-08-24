@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.animated-navbar {
+    border-radius: 5px;
+    margin-top: 50px;
+    margin-right: 180px;
+    position: fixed;
+    width: 45%;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(51, 51, 51, 0.7); /* Transparan */
+    backdrop-filter: blur(10px); /* Blur */
+}
+
+.main {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: end;
+    margin-right: 30px;
+}
+
+.animated-navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: end;
+}
+
+.animated-navbar ul li {
+    margin: 0 10px;
+}
+
+.animated-navbar ul li a {
+    font-size: 15px;
+    text-decoration: none;
+    color: white;
+    padding: 14px 20px;
+    position: relative;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.animated-navbar ul li a::before,
+.animated-navbar ul li a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    transition: all 0.3s ease;
+}
+
+.animated-navbar ul li a::before {
+    left: 0;
+    top: 0;
+    transform: scaleX(0);
+}
+
+.animated-navbar ul li a::after {
+    right: 0;
+    bottom: 0;
+    transform: scaleX(0);
+}
+
+.animated-navbar ul li a:hover::before,
+.animated-navbar ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+
+
+.search-button {
+    z-index: 1000;
+    margin-top: 50px;
+    border: none;
+    color: white;
+    padding: 14px 20px;
+    cursor: pointer;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: rgba(68, 68, 68, 0.7); /* Transparan */
+    
+}
+
+
+
+.search-button i {
+    font-size: 20px;
+}
+
+
+.login-link {
+    z-index: 1000;
+    margin-right: 15px;
+    margin-top: 50px;
+    padding: 14px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    background-color: rgba(68, 68, 68, 0.7); /* Transparan */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.login-link i {
+    font-size: 20px;
+    color: white;
+}
+
+.login-link:hover {
+    background-color: rgba(87, 87, 87, 0.7); /* Transparan saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}
+
+.login-link:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+.center-box {
+    width: 80%;
+    height: 80vh;
+    background-color: #222934;
+    color: #4dffdb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-direction: column;
+    z-index: 2000; /* Pastikan kotak berada di atas overlay */
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #222934;
+    z-index: 1000; /* Pastikan overlay berada di atas elemen lain */
+    display: none;
+}
+
+.kanan {
+    display: flex;
+    position: fixed;
+    margin-left: 650px;
+    margin-top: -100px;
+    align-items: center;
+
+}
+
+.user-menu {
+    position: relative;
+    display: inline-block;
+    
+}
+
+#userMenu{
+    margin-top: 50px;
+}
+
+
+.user-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: 10px;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 7px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #b3b2b2ad;
+    
+}
+
+.user-menu:hover .dropdown-content {
+    display: block;
+}
